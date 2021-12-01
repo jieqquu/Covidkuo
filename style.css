@@ -9,6 +9,7 @@ h1 {
   top: 2rem;
   padding-left: 2rem;
   letter-spacing: 4px;
+  color: #5E574E;
 }
 .link-top {
   position: absolute;
@@ -16,7 +17,7 @@ h1 {
   left: 2rem;
 
   height: 1px;
-  border-top: solid #acc0d8 1px;
+  border-top: solid #5E574E 1px;
 }
 .btn1 {
   position: absolute;
@@ -28,5 +29,5 @@ h1 {
   position: absolute;
 
   top: 60%;
-  left: 37%;
+  left: 38.3%;
 }

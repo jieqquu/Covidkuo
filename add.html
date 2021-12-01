@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本資料</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css" />
+</head>
+<style>
+    .link-top {
+         width: 90%;
+         height: 1px;
+        border-top: solid #818181 2px;
+    }
+
+    a:link {color: rgb(119, 111, 100)}
+    a:visited {color: rgb(119, 111, 100)}
+    a:active {color: red}
+    a:hover {color: red}
+
+    /* .btn1 {
+		
+        background-color: #95B2B5;
+		width: 180px;
+		height: 60px;
+        border-radius:100px;
+	} */
+
+</style>
+<body bgcolor="F4F4EB">
+    <header>
+        <h1>門診基本資料填寫區</h1>
+        <a href="#">個人資料</a>
+        <div class="link-top"></div>
+    </header>
+    <main>
+        <h2>臺北市立聯合醫院 新冠肺炎門診個案評估表   收案紀錄單</h2>
+        <form action="" method="GET">
+        <div class="table1">
+            <table style="font-size:25px;color: #5E574E;">
+                <tr>
+                <td align="right">就診日期</td>
+                <td align="left">
+                    <input  id="date" type="date" required>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">姓名</td>
+                <td align="left">
+                    <input size="7" minlength="2" maxlength="10" type="text" id="name" name="name" required />
+                </td>
+                </tr>
+                <tr>
+                 <td align="right">出生年月日</td>
+                 <td align="left"><input id="date" type="date" required></td>
+                </tr>
+                <tr>
+                <td align="right">E-mail</td>
+                <td align="left"><input size="7" minlength="2" maxlength="30" type="text" id="mail" name="mail"/></td>
+                </tr>
+                <tr>
+                <td align="right">性別</td>
+                <td align="left" colspan="2">
+                    <input type="radio" id="male" name="gender" value="M" />男
+                    <input type="radio" id="female" name="gender" value="F" />女
+                    <input type="radio" id="other" name="gender" value="O" />其他
+                </td>
+                </tr>
+                <tr>
+                <td align="right">病歷號</td>
+                <td align="left"><input size="7" minlength="2" maxlength="30" type="text" id="medicalrecordnum" name="medicalrecordnum"/></td>
+                </tr>
+                <tr>
+                <td align="right">身分證字號</td>
+                <td align="left"><input size="7" minlength="10" maxlength="10" type="text" id="idnumber" name="idnumber" required/></td>
+                </tr>
+                <tr>
+                <td align="right">是否曾為COVID確診個案</td>
+                <td align="left" >
+                    <input type="radio"  name="yesorno" value="y" required/>是
+                    <input type="radio"  name="yesorno" value="n" />否
+                </td>
+                </tr>
+                <tr>
+                <td align="right">確診日期</td>
+                <td align="left"><input id="date" type="date" required></td>
+                </tr>
+                <tr>
+                <td align="right">COVID治療地點</td>
+                <td align="left">
+                    <select name="location" id="location" required>
+                        <option></option>
+                        <option value="1">醫院</option>
+                        <option value="2">防疫旅館</option>
+                        <option value="3">家裡</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">COVID治療期間<br>最嚴重的氧氣使用經驗</td>
+                <td align="left">
+                    <select name="experience" id="experience" required>
+                        <option></option>
+                        <option value="0">無</option>
+                        <option value="1">鼻導管</option>
+                        <option value="2">呼吸面罩</option>
+                        <option value="3">高流量鼻導管</option>
+                        <option value="4">氣管內管插管</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">COVID治療期間<br>是否入住加護病房</td>
+                <td align="left">
+                    <input type="radio"  name="yesorno" value="y" required/>是
+                    <input type="radio"  name="yesorno" value="n" />否
+                </td>
+                </tr>
+                <tr>
+                <td align="right">出院日期</td>
+                <td align="left"><input id="date" type="date" required></td>
+                </tr>
+                <tr>
+                <td align="right">COVID之後<br>是否有因為COVID定期回診</td>
+                <td align="left">
+                    <input type="radio"  name="yesorno" value="y" required/>是
+                    <input type="radio"  name="yesorno" value="n" />否
+                </td>
+                </tr>
+                <tr>
+                <td align="right">如有因COVID定期回診<br>請填回診科別</td>
+                <td align="left">
+                    <select name="division" id="division" >
+                        <option></option>
+                        <option value="1">胸腔科</option>
+                        <option value="2">感染科</option>
+                        <option value="3">復健科</option>
+                        <option value="4">神經科</option>
+                        <option value="5">精神科</option>
+                        <option value="6">其他</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">特別門診處置</td>
+                <td align="left">
+                    <select name="dealwith" id="dealwith" >
+                        <option></option>
+                        <option value="1">轉回原主要看診醫師</option>
+                        <option value="2">轉介精神科</option>
+                        <option value="3">轉介新的科別評估</option>
+                        <option value="4">繼續留在特別門診</option>
+                    </select>
+                </td>
+                </tr>
+
+                <div class="btn1">
+                <tr>
+                <td class="mouse" align="right" >
+                    <button id="btn1" type="submit">
+                        <img src="btn/save.png" height="50px">    
+                    </button>
+
+                </div>
+                
+                <div class="btn2">
+                <td class="mouse" align="left">
+                    <button id="btn2" type="reset">
+                        <img src="btn/delete.png" height="50px">
+                    </button>
+                </td>
+                </div>
+            </tr>
+            </table>
+        </div>
+        
+        
+    </form>
+        
+
+    </main>
+</body>
+
+</html>

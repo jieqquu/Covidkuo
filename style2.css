@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  h1 {
+    position: absolute;
+    top: 2rem;
+    padding-left: 2rem;
+    letter-spacing: 4px;
+    color: #5E574E;
+  }
+  .link-top {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+  
+    height: 1px;
+    border-top: solid #5E574E 1px;
+  }
+  a {
+    position: absolute;
+    top: 3.3rem;
+    padding-left: 100em;
+    letter-spacing: 4px;
+  }
+  h2 {
+    position: absolute;
+    top: 7rem;
+    padding-left: 2rem;
+    letter-spacing: 3px;
+    color: #5E574E;
+}
+.table1 {
+    position: absolute;
+    top: 10rem;
+    left: 30%;
+    
+}
+tr {
+  height: 80pt;
+}
+td{
+    padding-left:30px
+}
+#btn1 {
+    background: transparent;
+    border-width: 0px;
+    outline: none;
+}
+#btn2 {
+    background: transparent;
+    border-width: 0px;
+    outline: none;
+}
+
