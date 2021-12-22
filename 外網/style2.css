@@ -22,7 +22,7 @@
   a {
     position: absolute;
     top: 3.3rem;
-    padding-left: 100em;
+    padding-left: 80%;
     letter-spacing: 4px;
   }
   h2 {
@@ -54,4 +54,11 @@ td{
     border-width: 0px;
     outline: none;
 }
-
+/* @media screen and (max-width: 620px) {
+  a {
+    position: absolute;
+    top: 3.3rem;
+    padding-left: 80em;
+    letter-spacing: 4px;
+  }
+} */
