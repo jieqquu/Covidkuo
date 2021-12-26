@@ -1,28 +1,40 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Noto Sans TC", sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
 
-  h1 {
-    position: absolute;
-    top: 2rem;
-    padding-left: 2rem;
-    letter-spacing: 4px;
-    color: #5E574E;
-  }
-  .link-top {
-    position: absolute;
-    top: 6rem;
-    left: 2rem;
-  
-    height: 1px;
-    border-top: solid #5E574E 1px;
-  }
-  .select {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+h1 {
+  position: absolute;
+  top: 2rem;
+  padding-left: 2rem;
+  letter-spacing: 4px;
+  color: #5e574e;
+}
+.link-top {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+
+  height: 1px;
+  border-top: solid #5e574e 1px;
+}
+.select {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+  bottom: 0.5em;
+}
