@@ -16,11 +16,37 @@
     <link rel="stylesheet" href="login.css" />
 
     <style>
-      #mail {
-        position: relative;
-        margin: 0 auto;
-        padding: auto;
+      .box{
+        width: 300px;
+        height: 150px;
+        
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        align-items: center; 
       }
+      .content{
+        width: auto;
+        height: auto;
+       
+      }
+
+      .box2{
+        width: 90px;
+        height: 50px;
+        
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        align-items: center; 
+      }
+      .sub{
+        width: auto;
+        
+      }
+
+
+
     </style>
   </head>
 
@@ -33,8 +59,9 @@
   <body>
     <main>
       <form>
-        <div id="login">
-          <div>
+        <div class="box">
+          <div class="content">
+                   
             <div id="account">
               <br /><br />
               <label for="account">帳號</label>
@@ -45,10 +72,10 @@
                 aria-describedby="account"
                 required
               />
-            </div>
+            
           </div>
 
-          <div>
+          
             <div id="password">
               <label for="passwordinput">密碼</label>
               <input
@@ -57,19 +84,15 @@
                 id="passwordinput"
                 required
               />
-            </div>
+            
           </div>
 
-          <div>
-            <div id="sub">
-              <button
-                type="submit"
-                class="btn btn-primary"
-                onclick="window.location.href='information.html'"
-              >
-                登入系統
-              </button>
-            </div>
+        </div>
+        </div>
+
+        <div class="box2">
+          <div class="sub">
+            <button type="submit" class="btn btn-primary" onclick="window.location.href='select.html'">登入系統</button>
           </div>
         </div>
       </form>

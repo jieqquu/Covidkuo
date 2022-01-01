@@ -25,6 +25,20 @@
     />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="info-trash.css" />
+
+    <script>
+      function send() {
+          $.ajax({
+      url: 'https://1e01-2001-b011-4007-19c5-5092-66f9-5015-4a08.ngrok.io/api/createcase',
+      data: $("form").serialize(),
+      processData: false,
+      type: 'POST',
+      success: function ( data ) {
+      alert( data );
+   }
+  });
+      }
+      </script>
   </head>
 
   <style>
@@ -89,6 +103,14 @@
     form > .btn-wrapper button.cancel {
       background-color: #e4a083;
     }
+    .error {
+      color: red;
+      margin-left: 5px;
+    }
+    
+
+
+    
   </style>
 
   <body class="container">
@@ -281,7 +303,7 @@
         </div>
       </div>
       <div class="btn-wrapper">
-        <button class="submit">儲存變更</button>
+        <button class="submit" type="button" onclick="send();">儲存變更</button>
         <button type="reset" class="cancel">清除重填</button>
       </div>
     </form>
@@ -344,8 +366,62 @@
           },
           deal_with: {
             required: true,
-          },
+          }
         },
+        messages: {
+          date: {
+            required: '必填',
+          },
+          name: {
+            required: '必填',
+          },
+          birth_date: {
+            required: '必填',
+          },
+          mail: {
+            required:'必填',
+            email:'Email格式不正確'
+          },
+          gender: {
+            required: '必填',
+          },
+          sex: {
+            required: '必填',
+          },
+          id_number: {
+            required: '必填',
+            minlength: '不得少於10位',
+          },
+          infect_covid: {
+            required: '必填',
+          },
+          infect_date: {
+            required: '必填',
+          },
+          treatment_place: {
+            required: '必填',
+          },
+          oxygen_treatment: {
+            required: '必填',
+          },
+          ICU_treatment: {
+            required: '必填',
+          },
+          discharged_date: {
+            required: '必填',
+          },
+          revisit: {
+            required: '必填',
+          },
+          revisit_division: {
+            required: '必填',
+          },
+          deal_with: {
+            required: '必填',
+          }
+
+        }
+
       });
       $(document).on("blur", "input", function () {
         $(this).valid();
